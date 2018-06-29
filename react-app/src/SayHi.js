@@ -7,7 +7,9 @@ import React, { Component } from 'react';
 // }
 
 class SayHi extends React.Component {
+  //只要存在 constructor 就要调用 super()
   constructor(props) {
+    //super() 是用來初始化 this 的，可以绑定事件到 this 上
     super(props);
     this.state = {date: new Date()};
   };
@@ -20,7 +22,6 @@ class SayHi extends React.Component {
     return (
       <div>
         <h1 style = {myStyle}>{this.state.date.toLocaleTimeString()} Hi, {this.props.name} </h1>
-        <p>TEST 1123</p>
       </div>
     )
   }

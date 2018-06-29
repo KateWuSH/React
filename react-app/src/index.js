@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import SayHi from './SayHi';
+import LikeButton from './LikeButton';
 import LifeCycle from './LifeCycle';
-// import LikeButton from './LikeButton';
+import AlarmClockControl from './AlarmClockControl';
 import registerServiceWorker from './registerServiceWorker';
 
 
@@ -17,8 +18,9 @@ function Group() {
             <SayHi name ="Kate" />
             <SayHi name ="Ben" />
             <SayHi name ="Zonk" />
-            {/* <LikeButton /> */}
+            <LikeButton name ="Patty" />
             <LifeCycle name ="Candy" />
+            <AlarmClockControl />
         </div>
     );
 }

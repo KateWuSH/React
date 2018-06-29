@@ -4,6 +4,7 @@ class LikeButton extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        this.state = {like: false};
     };
 
     getInitialState = function () {
@@ -20,6 +21,7 @@ class LikeButton extends React.Component {
             <p onClick={this.handleClick}>
             你<b>{text}</b>我。点我切换状态。
             </p>
+            // <button>點我換狀態</button>
         );
     }
     
