@@ -1,16 +1,21 @@
 .LikeButton {
-    display: flex;
     align-items: center;
-    font-family: '微軟正黑體', Arial, Helvetica, sans-serif
+    font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+    
 }
 
 .LikeButton p {
     font-size: 20px;
     color: blue;
     margin-right: 10px;
-    width: 120px;
+    text-align: center;
 }
 
 .LikeButton button {
-    height: 20px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin: 0 auto;
+    padding: 0;
+
 }

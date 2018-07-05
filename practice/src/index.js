@@ -6,46 +6,45 @@ import SayHi from './SayHi';
 import LikeButton from './LikeButton';
 import LifeCycle from './LifeCycle';
 import AlarmClockControl from './AlarmClockControl';
+import Form from './Form';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 //----- React-router-dom -----
 
-const Repos = () => (
-    <div>
-      <h2>Repos</h2>
-    </div>
-  )
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
   
-  const About = () => (
+ReactDOM.render(
+  <Router>
     <div>
-      <h2>About</h2>
+      <ul className='Nav'>
+        <li><Link to="/">App</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li>
+          <Link to={{
+            pathname: '/sayhi',
+            state: { id: '1', message: 'Hello, component' }
+          }}>Say Hi</Link>
+        </li>
+        <li><Link to="/likebutton">Like Button</Link></li>
+        <li><Link to="/alarm">Alarm Clock Control</Link></li>
+        <li><Link to="/form">Form</Link></li>
+      </ul>
+      <hr/>
+      <Route exact path="/" component={App}/>
+      <Route path="/about" component={About}/>
+      <Route path="/sayhi" render={props =><SayHi name="Joe" {...props} />} />
+      <Route path="/likebutton" component={LikeButton}/>
+      <Route path="/alarm" component={AlarmClockControl}/>
+      <Route path="/form" component={Form}/>
     </div>
-  )
-  
-  ReactDOM.render(
-    <Router>
-      <div>
-        <ul>
-          <li><Link to="/">App</Link></li>
-          <li><Link to="/repos">Repos</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li>
-            <Link to={{
-              pathname: '/sayhi',
-              state: { id: '1', message: 'hello, component' }
-            }}>SayHi</Link>
-          </li>
-        </ul>
-        <hr/>
-        <Route exact path="/" component={App}/>
-        <Route path="/repos" component={Repos}/>
-        <Route path="/about" component={About}/>
-        <Route path="/sayhi" render={props =><SayHi name="joe" {...props} />} />
-      </div>
-    </Router>,
-    document.getElementById('root'));
-  registerServiceWorker();
+  </Router>,
+  document.getElementById('root'));
+registerServiceWorker();
 
   //----- 方法三：component 內再嵌入 component -----
 

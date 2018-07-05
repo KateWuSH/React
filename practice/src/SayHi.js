@@ -11,6 +11,9 @@ class SayHi extends React.Component {
   constructor(props) {
     //super() 是用來初始化 this 的，可以绑定事件到 this 上
     super(props);
+    console.log('url:'+props.match.url);
+    console.log(this.props.location.state.message);
+    console.log(this.props);
     this.state = {date: new Date()};
   };
 
@@ -22,6 +25,7 @@ class SayHi extends React.Component {
     return (
       <div>
         <h1 style = {myStyle}>{this.state.date.toLocaleTimeString()} Hi, {this.props.name} </h1>
+        <p className="txt">{this.props.location.state.message}</p>
       </div>
     )
   }
