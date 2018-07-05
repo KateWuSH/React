@@ -52,7 +52,7 @@ class LifeCycle extends React.Component {
     }
   
     render() {
-      return <h1 onClick={this.handleClick}>{this.state.date.toLocaleTimeString()} Hi, {this.props.name}</h1>;
+      return <h3 onClick={this.handleClick}>{this.state.date.toLocaleTimeString()} Hi, {this.props.name}</h3>;
     }
   }
   
