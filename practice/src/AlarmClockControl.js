@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class AlarmClockControl extends React.Component {
+class AlarmClockControl extends Component {
     //先用 constructor 和 super 把父組件的 props 參數傳入
     //props 可從父組件傳入資料，資料是從父元件 -> 子元件的單向流動
     //state 只受子組件元件控制

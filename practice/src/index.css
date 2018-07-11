@@ -1,72 +1,78 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
 }
+
 .Nav {
-  padding: 0;
-  text-align: center;
-  margin: 25px 0;
+    padding: 0;
+    text-align: center;
+    margin: 25px 0;
 }
+
 .Nav li {
-  display: inline-block;
-  
+    display: inline-block;
 }
 
 .Nav li:not(:last-child) {
-  margin-right: 25px;
+    margin-right: 25px;
 }
 
 .Nav li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: black;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
 }
 
 hr {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, p {
-  text-align: center;
+h1,
+h2,
+p {
+    text-align: center;
 }
+
 
 /* 在這邊也可以寫 css 但是層級比 LikeButton.css 低 */
+
 .LikeButton {
-  display: block;
-  width: 200px;
-  margin: 25px auto;
+    display: block;
+    width: 200px;
+    margin: 25px auto;
 }
 
 button {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .txt {
-  font-size: 20px;
-  color: orange;
+    font-size: 20px;
+    color: orange;
 }
 
 .form {
-  width: 240px;
-  margin: 40px auto;
+    width: 240px;
+    margin: 40px auto;
 }
+
 .form p {
-  text-align: left;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eaeaea;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .form span {
-  display: inline-block;
-  margin-right: 10px;
-  width: 55px;
+    display: inline-block;
+    margin-right: 10px;
+    width: 55px;
 }
 
 .form .submit {
-  display: block;
-  margin: 30px auto 0;
+    display: block;
+    margin: 30px auto 0;
 }

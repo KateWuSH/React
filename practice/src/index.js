@@ -7,6 +7,8 @@ import LikeButton from './LikeButton';
 import LifeCycle from './LifeCycle';
 import AlarmClockControl from './AlarmClockControl';
 import Form from './Form';
+import CssStyleTest from './CssStyleTest';
+// import ImmutableJS from './ImmutableJS';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -33,6 +35,8 @@ ReactDOM.render(
         <li><Link to="/likebutton">Like Button</Link></li>
         <li><Link to="/alarm">Alarm Clock Control</Link></li>
         <li><Link to="/form">Form</Link></li>
+        <li><Link to="/cssstyletest">Css Style Test</Link></li>
+        {/* <li><Link to="/immutablejs">Immutable JS</Link></li> */}
       </ul>
       <hr/>
       <Route exact path="/" component={App}/>
@@ -41,6 +45,8 @@ ReactDOM.render(
       <Route path="/likebutton" component={LikeButton}/>
       <Route path="/alarm" component={AlarmClockControl}/>
       <Route path="/form" component={Form}/>
+      <Route path="/cssstyletest" component={CssStyleTest}/>
+      {/* <Route path="/immutablejs" component={ImmutableJS}/> */}
     </div>
   </Router>,
   document.getElementById('root'));

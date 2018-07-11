@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 //   }
 // }
 
-class SayHi extends React.Component {
+class SayHi extends Component {
   //只要存在 constructor 就要调用 super()
   constructor(props) {
     //super() 是用來初始化 this 的，可以绑定事件到 this 上

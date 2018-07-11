@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Form extends React.Component {
+class Form extends Component {
     constructor(props) {
         super(props);
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -10,7 +10,7 @@ class Form extends React.Component {
         this.state = {
             inputValue: '',
             radioValue: '',
-            selectValue: []
+            skills: []
         }
     }
 

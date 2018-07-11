@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class LifeCycle extends React.Component {
+class LifeCycle extends Component {
     constructor(props) {
       super(props);
       console.log('constructor');
